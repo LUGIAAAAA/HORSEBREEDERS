@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Where Bloodlines Meet Bandwidth",
   "scripts": {
-    "start": "npx serve -s . -l $PORT"
+    "start": "npx serve . -l $PORT"
   },
   "dependencies": {
     "serve": "^14.2.4"
