@@ -3,6 +3,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stable Legends LLC | Virtual Equine Asset Management</title>
 
+    <!-- SEO & Open Graph -->
+    <meta name="description" content="Where Bloodlines Meet Bandwidth. Stable Legends LLC is the world's premier virtual horse breeding and digital equine asset management firm. Founded by Maximus Fey & Sean Collins.">
+    <meta name="keywords" content="virtual horse breeding, digital equine, metaverse horses, blockchain bloodline, virtual stallion, NFT horses, Stable Legends">
+    <meta name="author" content="Stable Legends LLC">
+
+    <!-- Open Graph (Facebook, iMessage, Discord, Slack, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stable Legends LLC | Where Bloodlines Meet Bandwidth">
+    <meta property="og:description" content="The world's premier virtual horse breeding & digital equine asset management firm. $847M in virtual equine assets managed. Founded by Maximus Fey & Sean Collins.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/LUGIAAAAA/HORSEBREEDERS/main/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://stablelegends.com">
+    <meta property="og:site_name" content="Stable Legends LLC">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stable Legends LLC | Where Bloodlines Meet Bandwidth">
+    <meta name="twitter:description" content="The world's premier virtual horse breeding & digital equine asset management firm. $847M in virtual equine assets managed.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/LUGIAAAAA/HORSEBREEDERS/main/images/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/428d4f8b60d7cb02bdc1f8075743df86 1.png">
+    <link rel="apple-touch-icon" href="images/428d4f8b60d7cb02bdc1f8075743df86 1.png">
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#09090b">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -185,6 +213,11 @@
                         <span class="block text-[9px] tracking-[0.3em] text-gold-500 uppercase -mt-1">Est. 2024 &bull; Delaware LLC</span>
                     </div>
                 </div>
+                <!-- Mobile menu button -->
+                <button id="mobileMenuBtn" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden text-zinc-300 hover:text-zinc-100 p-2">
+                    <iconify-icon icon="solar:hamburger-menu-linear" class="text-2xl"></iconify-icon>
+                </button>
+
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-sm font-light hover:text-zinc-100 transition-colors">Firm Overview</a>
                     <a href="about.html" class="text-sm font-light hover:text-zinc-100 transition-colors">Our Story</a>
@@ -196,6 +229,21 @@
                     </div>
                     <a href="#inquire" class="text-sm font-medium text-zinc-950 bg-gold-500 hover:bg-gold-400 px-5 py-2.5 transition-colors">Client Portal</a>
                 </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-zinc-800/50 bg-zinc-950/95 backdrop-blur-md">
+            <div class="px-6 py-6 space-y-4">
+                <a href="#about" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="block text-sm font-light text-zinc-300 hover:text-zinc-100 transition-colors">Firm Overview</a>
+                <a href="about.html" class="block text-sm font-light text-zinc-300 hover:text-zinc-100 transition-colors">Our Story</a>
+                <a href="#services" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="block text-sm font-light text-zinc-300 hover:text-zinc-100 transition-colors">Equine Strategies</a>
+                <a href="#testimonials" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="block text-sm font-light text-zinc-300 hover:text-zinc-100 transition-colors">Client Outcomes</a>
+                <div class="flex items-center gap-2 pt-2">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full live-dot"></span>
+                    <span class="text-xs text-emerald-400 font-medium">3 Foals Being Born Now</span>
+                </div>
+                <a href="#inquire" onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="block text-center text-sm font-medium text-zinc-950 bg-gold-500 hover:bg-gold-400 px-5 py-3 transition-colors mt-4">Client Portal</a>
             </div>
         </div>
     </nav>
@@ -213,15 +261,16 @@
                 <span class="text-xs font-medium tracking-widest text-gold-500 uppercase">Now Accepting Q2 2026 Foal Pre-Orders</span>
             </div>
 
-            <h1 class="text-5xl md:text-8xl font-serif font-bold tracking-tight text-zinc-50 mb-8 max-w-5xl leading-[0.95]">
+            <h1 class="text-4xl sm:text-5xl md:text-8xl font-serif font-bold tracking-tight text-zinc-50 mb-8 max-w-5xl leading-[0.95]">
                 Where Bloodlines<br>Meet <span class="text-gold-500 italic">Bandwidth.</span>
             </h1>
 
-            <p class="text-lg md:text-xl font-light text-zinc-300 max-w-2xl mb-6">
+            <p class="text-base md:text-xl font-light text-zinc-300 max-w-2xl mb-6 px-2">
                 Founded by Maximus Fey &amp; Sean Collins &mdash; Managing Directors of Virtual Horse Breeding Operations. Establishing generational wealth through digital genome optimization since 2024.
             </p>
 
-            <p class="text-xs text-zinc-600 mb-12">As featured in Digital Horse Quarterly, Bloomberg Virtual, The Metaverse Times, and your mom's Facebook group about crypto</p>
+            <p class="text-xs text-zinc-600 mb-12 px-2 hidden sm:block">As featured in Digital Horse Quarterly, Bloomberg Virtual, The Metaverse Times, and your mom's Facebook group about crypto</p>
+            <p class="text-xs text-zinc-600 mb-12 px-2 sm:hidden">As featured in Digital Horse Quarterly &amp; Bloomberg Virtual</p>
 
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="#inquire" class="inline-flex items-center justify-center px-10 py-4 text-sm font-medium text-zinc-950 bg-gold-500 hover:bg-gold-400 transition-colors duration-300">
@@ -233,7 +282,7 @@
                 </a>
             </div>
 
-            <div class="mt-16 flex items-center gap-8 text-xs text-zinc-600">
+            <div class="mt-16 hidden md:flex items-center gap-8 text-xs text-zinc-600">
                 <span>Trusted by:</span>
                 <span class="font-medium text-zinc-500">HorseDAO Capital</span>
                 <span class="text-zinc-800">|</span>
@@ -246,7 +295,7 @@
         </div>
 
         <!-- Scroll indicator -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-2">
             <span class="text-[10px] tracking-widest text-zinc-600 uppercase">Scroll to Discover</span>
             <div class="w-px h-8 bg-gradient-to-b from-zinc-600 to-transparent"></div>
         </div>
@@ -258,22 +307,22 @@
             <p class="text-center text-[10px] tracking-[0.4em] text-zinc-600 uppercase mb-12">Performance Metrics &bull; Audited by Nobody</p>
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center">
                 <div class="fade-up">
-                    <p class="text-4xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-2" data-count="12847">0</p>
+                    <p class="text-3xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-2" data-count="12847">0</p>
                     <p class="text-sm font-light text-zinc-400">Virtual Foals Bred</p>
                     <p class="text-[10px] text-zinc-700 mt-1">and counting (we can't stop them)</p>
                 </div>
                 <div class="fade-up fade-up-delay-1">
-                    <p class="text-4xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-2">$847M</p>
+                    <p class="text-3xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-2">$847M</p>
                     <p class="text-sm font-light text-zinc-400">Equine Assets Managed</p>
                     <p class="text-[10px] text-zinc-700 mt-1">(in our hearts)</p>
                 </div>
                 <div class="fade-up fade-up-delay-2">
-                    <p class="text-4xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-2">99.4%</p>
+                    <p class="text-3xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-2">99.4%</p>
                     <p class="text-sm font-light text-zinc-400">Client Satisfaction Rate</p>
                     <p class="text-[10px] text-zinc-700 mt-1">the 0.6% was Dave again</p>
                 </div>
                 <div class="fade-up fade-up-delay-3">
-                    <p class="text-4xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-2">6</p>
+                    <p class="text-3xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-2">6</p>
                     <p class="text-sm font-light text-zinc-400">Metaverse Championships</p>
                     <p class="text-[10px] text-zinc-700 mt-1">we made the league ourselves</p>
                 </div>
@@ -514,13 +563,13 @@
     <section class="py-16 border-y border-zinc-800/50 bg-zinc-900/10">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <p class="text-center text-[10px] tracking-[0.4em] text-zinc-600 uppercase mb-10">As Featured In</p>
-            <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 text-zinc-700">
-                <span class="text-lg font-serif italic">Digital Horse Quarterly</span>
-                <span class="text-lg font-serif italic">Bloomberg Virtual</span>
-                <span class="text-lg font-serif italic">The Metaverse Times</span>
-                <span class="text-lg font-serif italic">CoinDesk Equine</span>
-                <span class="text-lg font-serif italic">TechCrunch (Stable Edition)</span>
-                <span class="text-lg font-serif italic">Maximus's LinkedIn</span>
+            <div class="flex flex-wrap justify-center items-center gap-x-6 md:gap-x-12 gap-y-4 text-zinc-700">
+                <span class="text-sm md:text-lg font-serif italic">Digital Horse Quarterly</span>
+                <span class="text-sm md:text-lg font-serif italic">Bloomberg Virtual</span>
+                <span class="text-sm md:text-lg font-serif italic">The Metaverse Times</span>
+                <span class="text-sm md:text-lg font-serif italic hidden sm:inline">CoinDesk Equine</span>
+                <span class="text-sm md:text-lg font-serif italic hidden sm:inline">TechCrunch (Stable Edition)</span>
+                <span class="text-sm md:text-lg font-serif italic">Maximus's LinkedIn</span>
             </div>
         </div>
     </section>
