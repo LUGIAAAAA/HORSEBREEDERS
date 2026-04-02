@@ -1,0 +1,416 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Stable Legends LLC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        gold: {
+                            300: '#FCD34D',
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .fade-up-delay-1 { transition-delay: 0.15s; }
+        .fade-up-delay-2 { transition-delay: 0.3s; }
+
+        /* Timeline line */
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, #3f3f46 10%, #3f3f46 90%, transparent);
+        }
+        @media (max-width: 768px) {
+            .timeline-line { left: 20px; }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #09090b; }
+        ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
+
+        /* Pull quote */
+        .pull-quote {
+            border-left: 3px solid #F59E0B;
+            padding-left: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-400 font-sans antialiased selection:bg-gold-500/30 selection:text-gold-200">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="images/428d4f8b60d7cb02bdc1f8075743df86 1.png" alt="Stable Legends" class="h-10 w-auto brightness-90">
+                    <div>
+                        <a href="index.html" class="font-serif text-lg tracking-tighter text-zinc-100 uppercase">
+                            Stable Legends
+                        </a>
+                        <span class="block text-[9px] tracking-[0.3em] text-gold-500 uppercase -mt-1">Est. 2024 &bull; Delaware LLC</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-sm font-light hover:text-zinc-100 transition-colors">Home</a>
+                    <a href="#origin" class="text-sm font-light hover:text-zinc-100 transition-colors">Origin Story</a>
+                    <a href="#timeline" class="text-sm font-light hover:text-zinc-100 transition-colors">Timeline</a>
+                    <a href="#founders" class="text-sm font-light hover:text-zinc-100 transition-colors">Founders</a>
+                    <a href="index.html#inquire" class="text-sm font-medium text-zinc-950 bg-gold-500 hover:bg-gold-400 px-5 py-2.5 transition-colors">Client Portal</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-[70vh] flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/95 via-zinc-950/85 to-zinc-950 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1920&q=80" alt="Night" class="w-full h-full object-cover opacity-20 grayscale">
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center flex flex-col items-center">
+            <span class="text-[10px] tracking-[0.4em] text-gold-500 uppercase block mb-6">The Origin Story</span>
+            <h1 class="text-4xl md:text-7xl font-serif font-bold tracking-tight text-zinc-50 mb-8 leading-[0.95]">
+                Every Empire Starts<br>Somewhere <span class="text-gold-500 italic">Unexpected.</span>
+            </h1>
+            <p class="text-lg font-light text-zinc-300 max-w-2xl mb-4">
+                Ours started at a strip club on Halloween.
+            </p>
+            <p class="text-xs text-zinc-600">This is not a metaphor. This is exactly what happened.</p>
+        </div>
+    </section>
+
+    <!-- The Origin Story -->
+    <section id="origin" class="py-32">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+
+            <!-- Chapter 1 -->
+            <div class="mb-24 fade-up">
+                <span class="text-[10px] tracking-[0.4em] text-gold-500 uppercase block mb-6">Chapter I</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-zinc-50 mb-8">The Night That Changed Everything</h2>
+
+                <div class="space-y-6 text-base font-light text-zinc-400 leading-relaxed">
+                    <p>
+                        It was Halloween night. Maximus Fey and Sean Collins found themselves at Rick's Cabaret &mdash; not because they had a plan, not because they were networking, but because it was Halloween and that's just where the night took them. As it does.
+                    </p>
+                    <p>
+                        The music was loud. The drinks were flowing. The costumes were creative, to say the least. And that's when she appeared &mdash; a Ukrainian woman, dressed head to toe as a bat. Full commitment. Wings, ears, the whole thing. She was a stripper, and she was a bat, and she had a question that would alter the course of two men's lives forever.
+                    </p>
+
+                    <div class="pull-quote my-10">
+                        <p class="text-xl md:text-2xl font-serif italic text-zinc-200 leading-relaxed">
+                            "So what do you guys do for work?"
+                        </p>
+                        <p class="text-sm text-zinc-600 mt-3">&mdash; A Ukrainian woman dressed as a bat, Rick's Cabaret, Halloween Night</p>
+                    </div>
+
+                    <p>
+                        Now, most people would answer this question normally. "Finance." "Tech." "Consulting." Something boring, something safe. But Maximus and Sean are not most people. Whether it was the drinks, the atmosphere, or the sheer creative energy of being asked about your career by a woman in a bat costume at a strip club, something different happened that night.
+                    </p>
+                    <p>
+                        They looked at each other. There was a pause. And then, with the confidence of two men who had absolutely no idea what they were about to say, one of them spoke:
+                    </p>
+
+                    <div class="pull-quote my-10">
+                        <p class="text-xl md:text-2xl font-serif italic text-zinc-200 leading-relaxed">
+                            "We breed virtual horses."
+                        </p>
+                        <p class="text-sm text-zinc-600 mt-3">&mdash; Either Maximus or Sean (both claim credit, neither can prove it)</p>
+                    </div>
+
+                    <p>
+                        The bat woman nodded. She didn't question it. She didn't laugh. She just said "Oh, cool" and moved on with her evening. And in that moment, Maximus and Sean realized something profound: if you can say "we breed virtual horses" to a stranger with a straight face and they accept it, then maybe &mdash; just maybe &mdash; this could actually be a business.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div class="mb-24 fade-up">
+                <span class="text-[10px] tracking-[0.4em] text-gold-500 uppercase block mb-6">Chapter II</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-zinc-50 mb-8">The Founding</h2>
+
+                <div class="space-y-6 text-base font-light text-zinc-400 leading-relaxed">
+                    <p>
+                        Most billion-dollar ideas are born in garages, dorm rooms, or at minimum, a WeWork. Stable Legends LLC was conceived in the back of an Uber on the way home from a strip club. The next morning, both men woke up expecting the idea to feel stupid in the daylight. It didn't. It felt even more brilliant.
+                    </p>
+                    <p>
+                        Within 48 hours, they had a name: <strong class="text-zinc-200">Stable Legends LLC.</strong> Within a week, they had a logo, a website, and an alarming amount of conviction. Within a month, they had their first investor.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chapter 3: The First Investor -->
+            <div class="mb-24 fade-up">
+                <span class="text-[10px] tracking-[0.4em] text-gold-500 uppercase block mb-6">Chapter III</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-zinc-50 mb-8">The Barista Who Believed</h2>
+
+                <div class="space-y-6 text-base font-light text-zinc-400 leading-relaxed">
+                    <p>
+                        Stable Legends' first investor was not a venture capitalist. Not an angel investor. Not a crypto whale. It was a barista in Fulton Market, Chicago.
+                    </p>
+                    <p>
+                        The details of how this happened are the stuff of legend. Maximus was ordering his usual &mdash; a drink so complicated it bordered on performance art &mdash; when the barista asked what he did for a living. By this point, Maximus had been rehearsing the pitch. He didn't flinch. He delivered a 90-second masterclass on the untapped potential of virtual equine asset management with such conviction that the barista reached into his apron, pulled out cash, and said:
+                    </p>
+
+                    <div class="pull-quote my-10">
+                        <p class="text-xl md:text-2xl font-serif italic text-zinc-200 leading-relaxed">
+                            "I'm in. How much do you need?"
+                        </p>
+                        <p class="text-sm text-zinc-600 mt-3">&mdash; Anonymous Barista, Fulton Market, Chicago<br>
+                        <span class="text-zinc-700">Now referred to internally as "Angel Investor #001" and "The Espresso Oracle"</span></p>
+                    </div>
+
+                    <p>
+                        That barista became the first outside investor in Stable Legends LLC. To this day, they receive quarterly reports (which they have never opened) and are entitled to 0.003% equity in all virtual foals bred under the "Fulton Market Bloodline" &mdash; a lineage named in their honor.
+                    </p>
+                    <p>
+                        We are legally required to state that this investment has not yet yielded any financial returns. We are also legally required to state that this is a real company.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chapter 4: The Mission -->
+            <div class="mb-24 fade-up">
+                <span class="text-[10px] tracking-[0.4em] text-gold-500 uppercase block mb-6">Chapter IV</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-zinc-50 mb-8">The Mission</h2>
+
+                <div class="space-y-6 text-base font-light text-zinc-400 leading-relaxed">
+                    <p>
+                        What started as an improvised answer to a stripper's question has become something neither founder fully understands but both are deeply committed to. Stable Legends LLC now operates across multiple metaverse platforms, manages a portfolio of over 12,000 virtual foals, and employs a team of... well, it's just Maximus and Sean. But they work very hard.
+                    </p>
+                    <p>
+                        Their mission is simple: to prove that if you say something with enough confidence, for long enough, it eventually becomes real. Virtual horse breeding is not just an industry &mdash; it's a state of mind. And Maximus Fey and Sean Collins are its founding fathers.
+                    </p>
+
+                    <div class="pull-quote my-10">
+                        <p class="text-xl md:text-2xl font-serif italic text-zinc-200 leading-relaxed">
+                            "We started this as a joke. But somewhere along the way, the joke got a Delaware LLC, a logo, and an investor. At what point does a joke become a company? We think we crossed that line. We're not sure when. We're not going back."
+                        </p>
+                        <p class="text-sm text-zinc-600 mt-3">&mdash; Maximus Fey &amp; Sean Collins, Co-Managing Directors</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="py-32 bg-zinc-900/30 border-y border-zinc-800/50">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 fade-up">
+                <span class="text-[10px] tracking-[0.4em] text-gold-500 uppercase block mb-4">Milestones</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-4">Company Timeline</h2>
+                <p class="text-sm font-light text-zinc-500">A brief history of questionable decisions</p>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Event 1 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start fade-up">
+                    <div class="md:w-48 flex-shrink-0">
+                        <span class="text-2xl font-serif font-bold text-gold-500">Halloween</span>
+                        <p class="text-xs text-zinc-600">2024</p>
+                    </div>
+                    <div class="flex-1 p-8 border border-zinc-800/50 bg-zinc-950">
+                        <h3 class="text-lg font-serif font-medium text-zinc-100 mb-2">The Bat Woman Incident</h3>
+                        <p class="text-sm font-light text-zinc-400 leading-relaxed">
+                            A Ukrainian stripper dressed as a bat asks Maximus and Sean what they do for work at Rick's Cabaret. The concept of "virtual horse breeding" is born. Neither founder can recall who said it first. Both have trademarked the phrase independently.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start fade-up">
+                    <div class="md:w-48 flex-shrink-0">
+                        <span class="text-2xl font-serif font-bold text-gold-500">November</span>
+                        <p class="text-xs text-zinc-600">2024</p>
+                    </div>
+                    <div class="flex-1 p-8 border border-zinc-800/50 bg-zinc-950">
+                        <h3 class="text-lg font-serif font-medium text-zinc-100 mb-2">Stable Legends LLC Officially Incorporated</h3>
+                        <p class="text-sm font-light text-zinc-400 leading-relaxed">
+                            Filed in Delaware because "that's where real companies file." Neither founder has been to Delaware. The registered agent's office is a UPS Store.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start fade-up">
+                    <div class="md:w-48 flex-shrink-0">
+                        <span class="text-2xl font-serif font-bold text-gold-500">November</span>
+                        <p class="text-xs text-zinc-600">2024</p>
+                    </div>
+                    <div class="flex-1 p-8 border border-zinc-800/50 bg-zinc-950">
+                        <h3 class="text-lg font-serif font-medium text-zinc-100 mb-2">First Investor Secured</h3>
+                        <p class="text-sm font-light text-zinc-400 leading-relaxed">
+                            A barista in Fulton Market, Chicago, becomes Angel Investor #001 after hearing a 90-second pitch while making a latte. Investment amount classified. Returns: TBD (indefinitely).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start fade-up">
+                    <div class="md:w-48 flex-shrink-0">
+                        <span class="text-2xl font-serif font-bold text-gold-500">December</span>
+                        <p class="text-xs text-zinc-600">2024</p>
+                    </div>
+                    <div class="flex-1 p-8 border border-zinc-800/50 bg-zinc-950">
+                        <h3 class="text-lg font-serif font-medium text-zinc-100 mb-2">First Virtual Foal Bred</h3>
+                        <p class="text-sm font-light text-zinc-400 leading-relaxed">
+                            "Fulton Flame," the inaugural foal of the Fulton Market Bloodline, is generated at 4:17 AM. Maximus cries. Sean pretends not to notice.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start fade-up">
+                    <div class="md:w-48 flex-shrink-0">
+                        <span class="text-2xl font-serif font-bold text-gold-500">2025</span>
+                        <p class="text-xs text-zinc-600">Q1-Q4</p>
+                    </div>
+                    <div class="flex-1 p-8 border border-zinc-800/50 bg-zinc-950">
+                        <h3 class="text-lg font-serif font-medium text-zinc-100 mb-2">Rapid Expansion &amp; Market Dominance</h3>
+                        <p class="text-sm font-light text-zinc-400 leading-relaxed">
+                            Portfolio grows to 12,000+ virtual foals. Six metaverse championships won (in a league they created). Named "Best Metaverse Equine Firm" by Digital Horse Quarterly (a publication they may or may not have founded). Matching cross necklaces acquired. Blood oath taken. HR department requested, denied.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start fade-up">
+                    <div class="md:w-48 flex-shrink-0">
+                        <span class="text-2xl font-serif font-bold text-gold-500">2026</span>
+                        <p class="text-xs text-zinc-600">Present</p>
+                    </div>
+                    <div class="flex-1 p-8 border border-gold-500/30 bg-zinc-950">
+                        <h3 class="text-lg font-serif font-medium text-zinc-100 mb-2">You Are Here</h3>
+                        <p class="text-sm font-light text-zinc-400 leading-relaxed">
+                            You're reading this website. That means the SEO is working. Or someone sent you this as a joke. Either way, you're here now, and we're not letting you leave without at least considering investing in a virtual horse. Scroll down. There's a contact form. You know you want to.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Quick Section -->
+    <section id="founders" class="py-32">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-[10px] tracking-[0.4em] text-gold-500 uppercase block mb-4">Leadership</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold tracking-tight text-zinc-50 mb-4">The Founders</h2>
+                <p class="text-sm font-light text-zinc-500">Two guys, two cross necklaces, one vision</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="text-center fade-up">
+                    <div class="aspect-square max-w-sm mx-auto bg-zinc-900 border border-zinc-800 mb-6 overflow-hidden">
+                        <img src="images/maximus.jpg" alt="Maximus Fey" class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-zinc-100 mb-1">Maximus Fey</h3>
+                    <p class="text-sm font-medium text-gold-500 mb-4">Co-Managing Director</p>
+                    <p class="text-sm font-light text-zinc-500">The one who probably said "virtual horse breeding" first. Will debate this until the end of time. Known for 3 AM coding sessions, energy drink dependency, and an unwavering belief that Da Vinci would approve.</p>
+                </div>
+
+                <div class="text-center fade-up fade-up-delay-1">
+                    <div class="aspect-square max-w-sm mx-auto bg-zinc-900 border border-zinc-800 mb-6 overflow-hidden">
+                        <img src="images/sean.jpg" alt="Sean Collins" class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-zinc-100 mb-1">Sean Collins</h3>
+                    <p class="text-sm font-medium text-gold-500 mb-4">Co-Managing Director</p>
+                    <p class="text-sm font-light text-zinc-500">The one who definitely said "virtual horse breeding" first (according to him). Boston-bred, Dunkin'-powered. Can close a deal anywhere &mdash; coffee shops, strip clubs, your DMs. The hand gesture is non-negotiable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-zinc-900/40 border-t border-zinc-800/50">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center fade-up">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold tracking-tight text-zinc-50 mb-4">Ready to Join the Legacy?</h2>
+            <p class="text-sm font-light text-zinc-400 mb-8">If a barista in Fulton Market can believe in us, so can you.</p>
+            <a href="index.html#inquire" class="inline-flex items-center justify-center px-10 py-4 text-sm font-medium text-zinc-950 bg-gold-500 hover:bg-gold-400 transition-colors duration-300">
+                Submit an Inquiry
+                <iconify-icon icon="solar:arrow-right-linear" class="ml-2"></iconify-icon>
+            </a>
+            <p class="text-[10px] text-zinc-700 mt-4">Serious inquiries only. Unless your inquiry is funny. Then we'll probably respond faster.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 pt-16 pb-10 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center pt-4 text-xs font-light text-zinc-700 gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="images/428d4f8b60d7cb02bdc1f8075743df86 1.png" alt="Stable Legends" class="h-8 w-auto brightness-75">
+                    <span>&copy; 2024-2026 Stable Legends LLC. All simulated rights reserved.</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-zinc-400 transition-colors">Home</a>
+                    <a href="index.html#services" class="hover:text-zinc-400 transition-colors">Services</a>
+                    <a href="index.html#inquire" class="hover:text-zinc-400 transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <p class="text-center text-[9px] text-zinc-800 mt-8">
+                DISCLAIMER: The events described on this page are 100% true. We wish they weren't. The bat woman, the barista, the strip club &mdash; all real. We have no evidence of any of this, but we also have no reason to lie. If the bat woman or the Fulton Market barista is reading this, please reach out. You are part of our origin story and we would like to feature you in our Series A deck.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body></html>
